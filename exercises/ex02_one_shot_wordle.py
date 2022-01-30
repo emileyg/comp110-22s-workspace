@@ -26,7 +26,7 @@ while i < len_secret_word:
             if secret_word[alternate_indices] == guess_word[i]:
                 letter_in_secret_word = True
             alternate_indices += 1
-        if letter_in_secret_word == True:
+        if letter_in_secret_word:
             emoji_string += YELLOW_BOX
         else:
             emoji_string += WHITE_BOX
