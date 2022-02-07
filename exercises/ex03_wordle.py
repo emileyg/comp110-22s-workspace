@@ -10,7 +10,8 @@ def contains_char(search_string: str, search_char: str) -> bool:
     while alt_indices < len(search_string):
         if search_string[alt_indices] == search_char:
             return True
-        alt_indices += 1 
+        else:
+            alt_indices += 1 
     return False
 
 
@@ -38,7 +39,7 @@ def input_guess(expt_len: int) -> str:
     """Given an integer of the length of the secret word, prompts that length guess."""
     guess_word: str = str(input(f"Enter a {expt_len} character word: "))
     while len(guess_word) != expt_len:
-        guess_word = input(f"That wasn't {expt_len} characters! Try again: ")
+        guess_word = input(f"That wasn't {expt_len} chars Try again: ")
     return guess_word
 
 
