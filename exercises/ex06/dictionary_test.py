@@ -2,9 +2,7 @@
 
 __author__ = "730388479"
 
-from exercises.ex06.dictionary import invert
-from exercises.ex06.dictionary import favorite_color
-from exercises.ex06.dictionary import count
+from dictionary import invert, favorite_color, count
 
 
 # Tests for invert
@@ -30,7 +28,7 @@ def test_invert_use_two() -> None:
 def test_favorite_color_edge_empty() -> None:
     """Testing for edge case, empty dictionary."""
     xs: dict[str, str] = {}
-    assert favorite_color(xs) == {}
+    assert favorite_color(xs) == ""
 
 
 def test_favorite_color_use_one() -> None:
